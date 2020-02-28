@@ -14,6 +14,8 @@
 		FB00F43A2409751B0022CFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB00F4392409751B0022CFD7 /* Assets.xcassets */; };
 		FB00F43D2409751B0022CFD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB00F43B2409751B0022CFD7 /* LaunchScreen.storyboard */; };
 		FB00F4402409751B0022CFD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB00F43F2409751B0022CFD7 /* main.m */; };
+		FB00F44924097DCF0022CFD7 /* TLCPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = FB00F44824097DCF0022CFD7 /* TLCPokemon.m */; };
+		FB00F44B2409828A0022CFD7 /* LambdaSDK in Resources */ = {isa = PBXBuildFile; fileRef = FB00F44A2409828A0022CFD7 /* LambdaSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		FB00F43C2409751B0022CFD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB00F43E2409751B0022CFD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB00F43F2409751B0022CFD7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB00F44724097DCF0022CFD7 /* TLCPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLCPokemon.h; sourceTree = "<group>"; };
+		FB00F44824097DCF0022CFD7 /* TLCPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLCPokemon.m; sourceTree = "<group>"; };
+		FB00F44A2409828A0022CFD7 /* LambdaSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LambdaSDK; path = "../../../C-Stuff/ios-afternoon-project-astronomy-objc/TLCAstronomy/TLCAstronomy/LambdaSDK"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,7 @@
 		FB00F42C240975170022CFD7 /* PokeDexSprint15 */ = {
 			isa = PBXGroup;
 			children = (
+				FB00F44624097DB70022CFD7 /* Model */,
 				FB00F42D240975170022CFD7 /* AppDelegate.h */,
 				FB00F42E240975170022CFD7 /* AppDelegate.m */,
 				FB00F430240975170022CFD7 /* SceneDelegate.h */,
@@ -72,8 +78,18 @@
 				FB00F43B2409751B0022CFD7 /* LaunchScreen.storyboard */,
 				FB00F43E2409751B0022CFD7 /* Info.plist */,
 				FB00F43F2409751B0022CFD7 /* main.m */,
+				FB00F44A2409828A0022CFD7 /* LambdaSDK */,
 			);
 			path = PokeDexSprint15;
+			sourceTree = "<group>";
+		};
+		FB00F44624097DB70022CFD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB00F44724097DCF0022CFD7 /* TLCPokemon.h */,
+				FB00F44824097DCF0022CFD7 /* TLCPokemon.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB00F44B2409828A0022CFD7 /* LambdaSDK in Resources */,
 				FB00F43D2409751B0022CFD7 /* LaunchScreen.storyboard in Resources */,
 				FB00F43A2409751B0022CFD7 /* Assets.xcassets in Resources */,
 				FB00F438240975170022CFD7 /* Main.storyboard in Resources */,
@@ -150,6 +167,7 @@
 				FB00F42F240975170022CFD7 /* AppDelegate.m in Sources */,
 				FB00F4402409751B0022CFD7 /* main.m in Sources */,
 				FB00F432240975170022CFD7 /* SceneDelegate.m in Sources */,
+				FB00F44924097DCF0022CFD7 /* TLCPokemon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
