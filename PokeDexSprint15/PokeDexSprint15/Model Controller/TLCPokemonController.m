@@ -35,7 +35,7 @@
     
 }
 
--(NSArray <TLCPokemon *> *)getAllPokemon {
+-(NSArray <TLCPokemon *> *)getPokemon {
     return self.pokemonArray;
 }
 

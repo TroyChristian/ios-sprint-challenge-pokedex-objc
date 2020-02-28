@@ -14,11 +14,11 @@
 
 @interface TLCPokemonController : NSObject
 
--(void)getAllPokemon: (void (^)(NSError *error))completion;
+-(void)retrievePokemon: (void (^)(NSError *error))completion;
 
 -(void)getPokemonDetails:(TLCPokemon *)pokemon;
 
--(NSArray <TLCPokemon *> *)pokemonArray;
+-(NSArray <TLCPokemon *> *)getPokemon;
 
 @end
 
