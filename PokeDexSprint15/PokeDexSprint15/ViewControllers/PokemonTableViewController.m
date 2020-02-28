@@ -76,7 +76,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     PokemonDetailViewController *detailVC = [segue destinationViewController];
-    if ([segue.identifier isEqualToString:@"ShowPokemonDetail"]) {
+    if ([segue.identifier isEqualToString:@"showPokemonDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         detailVC.pokemonController = self.pokemonController;
         detailVC.pokemon = [self.pokemonController getPokemon][indexPath.row];

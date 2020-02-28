@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+
 @class TLCPokemonController, TLCPokemon;
 
 @interface PokemonDetailViewController : UIViewController
@@ -17,4 +17,3 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_ASSUME_NONNULL_END
