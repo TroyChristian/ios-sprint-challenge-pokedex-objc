@@ -16,6 +16,9 @@
 		FB00F4402409751B0022CFD7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB00F43F2409751B0022CFD7 /* main.m */; };
 		FB00F44924097DCF0022CFD7 /* TLCPokemon.m in Sources */ = {isa = PBXBuildFile; fileRef = FB00F44824097DCF0022CFD7 /* TLCPokemon.m */; };
 		FB00F44B2409828A0022CFD7 /* LambdaSDK in Resources */ = {isa = PBXBuildFile; fileRef = FB00F44A2409828A0022CFD7 /* LambdaSDK */; };
+		FB00F44F240986B30022CFD7 /* TLCPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB00F44E240986B30022CFD7 /* TLCPokemonController.m */; };
+		FB00F453240988BB0022CFD7 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00F452240988BB0022CFD7 /* APIController.swift */; };
+		FB00F45624098EA90022CFD7 /* LSIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FB00F45524098EA80022CFD7 /* LSIErrors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,12 @@
 		FB00F44724097DCF0022CFD7 /* TLCPokemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLCPokemon.h; sourceTree = "<group>"; };
 		FB00F44824097DCF0022CFD7 /* TLCPokemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLCPokemon.m; sourceTree = "<group>"; };
 		FB00F44A2409828A0022CFD7 /* LambdaSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LambdaSDK; path = "../../../C-Stuff/ios-afternoon-project-astronomy-objc/TLCAstronomy/TLCAstronomy/LambdaSDK"; sourceTree = "<group>"; };
+		FB00F44D240986B30022CFD7 /* TLCPokemonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TLCPokemonController.h; sourceTree = "<group>"; };
+		FB00F44E240986B30022CFD7 /* TLCPokemonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TLCPokemonController.m; sourceTree = "<group>"; };
+		FB00F451240988BB0022CFD7 /* PokeDexSprint15-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokeDexSprint15-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB00F452240988BB0022CFD7 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		FB00F454240989C30022CFD7 /* LSIErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LSIErrors.h; path = "../../../../C-Stuff/ios-afternoon-project-astronomy-objc/TLCAstronomy/TLCAstronomy/LambdaSDK/LSIErrors.h"; sourceTree = "<group>"; };
+		FB00F45524098EA80022CFD7 /* LSIErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSIErrors.m; path = "../../../../C-Stuff/ios-afternoon-project-astronomy-objc/TLCAstronomy/TLCAstronomy/LambdaSDK/LSIErrors.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +75,8 @@
 		FB00F42C240975170022CFD7 /* PokeDexSprint15 */ = {
 			isa = PBXGroup;
 			children = (
+				FB00F4502409889B0022CFD7 /* APIController */,
+				FB00F44C2409869A0022CFD7 /* Model Controller */,
 				FB00F44624097DB70022CFD7 /* Model */,
 				FB00F42D240975170022CFD7 /* AppDelegate.h */,
 				FB00F42E240975170022CFD7 /* AppDelegate.m */,
@@ -90,6 +101,26 @@
 				FB00F44824097DCF0022CFD7 /* TLCPokemon.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FB00F44C2409869A0022CFD7 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB00F44D240986B30022CFD7 /* TLCPokemonController.h */,
+				FB00F44E240986B30022CFD7 /* TLCPokemonController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		FB00F4502409889B0022CFD7 /* APIController */ = {
+			isa = PBXGroup;
+			children = (
+				FB00F452240988BB0022CFD7 /* APIController.swift */,
+				FB00F451240988BB0022CFD7 /* PokeDexSprint15-Bridging-Header.h */,
+				FB00F454240989C30022CFD7 /* LSIErrors.h */,
+				FB00F45524098EA80022CFD7 /* LSIErrors.m */,
+			);
+			path = APIController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +154,7 @@
 				TargetAttributes = {
 					FB00F429240975170022CFD7 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
@@ -163,11 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB00F453240988BB0022CFD7 /* APIController.swift in Sources */,
 				FB00F435240975170022CFD7 /* ViewController.m in Sources */,
 				FB00F42F240975170022CFD7 /* AppDelegate.m in Sources */,
+				FB00F45624098EA90022CFD7 /* LSIErrors.m in Sources */,
 				FB00F4402409751B0022CFD7 /* main.m in Sources */,
 				FB00F432240975170022CFD7 /* SceneDelegate.m in Sources */,
 				FB00F44924097DCF0022CFD7 /* TLCPokemon.m in Sources */,
+				FB00F44F240986B30022CFD7 /* TLCPokemonController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JYCUK7B5K;
 				INFOPLIST_FILE = PokeDexSprint15/Info.plist;
@@ -316,6 +352,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lambda.PokeDexSprint15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeDexSprint15/APIController/PokeDexSprint15-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -324,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JYCUK7B5K;
 				INFOPLIST_FILE = PokeDexSprint15/Info.plist;
@@ -333,6 +373,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lambda.PokeDexSprint15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokeDexSprint15/APIController/PokeDexSprint15-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
