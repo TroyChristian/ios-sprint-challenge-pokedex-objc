@@ -25,24 +25,28 @@ Answer the following questions inline with this document.
 
 	printf("Word frequency: %s", wordFrequency.description.UTF8String);
 	```
+    
+    word is not being released
 
 	2. Rewrite the code so that it does not leak any memory with ARC disabled
 
 2. Which of these objects is autoreleased?  Why?
 
-	1. `NSDate *yesterday = [NSDate date];`
+	1. `NSDate *yesterday = [NSDate date];` autoreleased 
 	
-	2. `NSDate *theFuture = [[NSDate dateWithTimeIntervalSinceNow:60] retain];`
+	2. `NSDate *theFuture = [[NSDate dateWithTimeIntervalSinceNow:60] retain];` keyword retain requires this to be manually released later
 	
-	3. `NSString *name = [[NSString alloc] initWithString:@"John Sundell"];`
+	3. `NSString *name = [[NSString alloc] initWithString:@"John Sundell"];`  retained.
 	
-	4. `NSDate *food = [NSDate new];`
+	4. `NSDate *food = [NSDate new];` new keyword means this is not autoreleased.
 	
-	5. `LSIPerson *john = [[LSIPerson alloc] initWithName:name];`
+	5. `LSIPerson *john = [[LSIPerson alloc] initWithName:name];` retained
 	
-	6. `LSIPerson *max = [[[LSIPerson alloc] initWithName:@"Max"] autorelease];`
+	6. `LSIPerson *max = [[[LSIPerson alloc] initWithName:@"Max"] autorelease];` released due to autorelease
 
 3. Explain when you need to use the `NSAutoreleasePool`.
+
+When multiple elements could be retained accidently, autoReleasePool is a powerful tool to make sure all objects in a block of code are properly deallocated.
 
 
 4. Implement a convenience `class` method to create a `LSIPerson` object that takes a `name` property and returns an autoreleased object.
@@ -53,6 +57,7 @@ Answer the following questions inline with this document.
 @property (nonatomic, copy) NSString *name;
 
 - (instancetype)initWithName:(NSString *)name;
+return [[[LSIPerson allc] initWithName:name] autorelease
 
 @end
 ```
