@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Pokemon Table View Controller-->
         <scene sceneID="u67-zR-SCo">
             <objects>
-                <tableViewController id="pKV-sg-wXs" sceneMemberID="viewController">
+                <tableViewController id="pKV-sg-wXs" customClass="PokemonTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yHn-AF-dKL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,31 +48,31 @@
             </objects>
             <point key="canvasLocation" x="847.82608695652175" y="154.6875"/>
         </scene>
-        <!--View Controller-->
+        <!--Pokemon Detail View Controller-->
         <scene sceneID="Otj-Ug-wwl">
             <objects>
-                <viewController id="xKy-7p-CMl" sceneMemberID="viewController">
+                <viewController id="xKy-7p-CMl" customClass="PokemonDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e0G-vC-hVh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="48Q-Bw-x1o">
-                                <rect key="frame" x="20" y="125" width="374" height="199"/>
+                                <rect key="frame" x="20" y="125" width="374" height="199.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCj-gX-8gV">
-                                <rect key="frame" x="20" y="398" width="168" height="21"/>
+                                <rect key="frame" x="20" y="398.5" width="168" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzY-aP-A3R">
-                                <rect key="frame" x="20" y="486" width="168" height="21"/>
+                                <rect key="frame" x="20" y="486.5" width="168" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ke-M4-wMU">
-                                <rect key="frame" x="20" y="566" width="168" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ke-M4-wMU">
+                                <rect key="frame" x="20" y="566.5" width="168" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -97,6 +97,12 @@
                         <viewLayoutGuide key="safeArea" id="H4b-xs-28f"/>
                     </view>
                     <navigationItem key="navigationItem" id="cRo-Ih-Fib"/>
+                    <connections>
+                        <outlet property="PokemonNameLabel" destination="PCj-gX-8gV" id="91z-0s-bCX"/>
+                        <outlet property="abilitiesLabel" destination="9Ke-M4-wMU" id="49R-eC-540"/>
+                        <outlet property="idLabel" destination="kzY-aP-A3R" id="isZ-7b-fLg"/>
+                        <outlet property="pokemonImage" destination="48Q-Bw-x1o" id="yQH-gT-tEo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fnl-me-0y8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

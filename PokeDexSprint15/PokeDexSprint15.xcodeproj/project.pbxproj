@@ -18,6 +18,8 @@
 		FB00F44F240986B30022CFD7 /* TLCPokemonController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB00F44E240986B30022CFD7 /* TLCPokemonController.m */; };
 		FB00F453240988BB0022CFD7 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB00F452240988BB0022CFD7 /* APIController.swift */; };
 		FB00F45624098EA90022CFD7 /* LSIErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = FB00F45524098EA80022CFD7 /* LSIErrors.m */; };
+		FB00F45A2409A7A20022CFD7 /* PokemonTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB00F4592409A7A20022CFD7 /* PokemonTableViewController.m */; };
+		FB00F45D2409A7BF0022CFD7 /* PokemonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB00F45C2409A7BF0022CFD7 /* PokemonDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,10 @@
 		FB00F452240988BB0022CFD7 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		FB00F454240989C30022CFD7 /* LSIErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LSIErrors.h; path = "../../../../C-Stuff/ios-afternoon-project-astronomy-objc/TLCAstronomy/TLCAstronomy/LambdaSDK/LSIErrors.h"; sourceTree = "<group>"; };
 		FB00F45524098EA80022CFD7 /* LSIErrors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSIErrors.m; path = "../../../../C-Stuff/ios-afternoon-project-astronomy-objc/TLCAstronomy/TLCAstronomy/LambdaSDK/LSIErrors.m"; sourceTree = "<group>"; };
+		FB00F4582409A7A20022CFD7 /* PokemonTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonTableViewController.h; sourceTree = "<group>"; };
+		FB00F4592409A7A20022CFD7 /* PokemonTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonTableViewController.m; sourceTree = "<group>"; };
+		FB00F45B2409A7BF0022CFD7 /* PokemonDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonDetailViewController.h; sourceTree = "<group>"; };
+		FB00F45C2409A7BF0022CFD7 /* PokemonDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		FB00F42C240975170022CFD7 /* PokeDexSprint15 */ = {
 			isa = PBXGroup;
 			children = (
+				FB00F4572409A76F0022CFD7 /* ViewControllers */,
 				FB00F4502409889B0022CFD7 /* APIController */,
 				FB00F44C2409869A0022CFD7 /* Model Controller */,
 				FB00F44624097DB70022CFD7 /* Model */,
@@ -116,6 +123,17 @@
 				FB00F45524098EA80022CFD7 /* LSIErrors.m */,
 			);
 			path = APIController;
+			sourceTree = "<group>";
+		};
+		FB00F4572409A76F0022CFD7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB00F4582409A7A20022CFD7 /* PokemonTableViewController.h */,
+				FB00F4592409A7A20022CFD7 /* PokemonTableViewController.m */,
+				FB00F45B2409A7BF0022CFD7 /* PokemonDetailViewController.h */,
+				FB00F45C2409A7BF0022CFD7 /* PokemonDetailViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +215,8 @@
 				FB00F432240975170022CFD7 /* SceneDelegate.m in Sources */,
 				FB00F44924097DCF0022CFD7 /* TLCPokemon.m in Sources */,
 				FB00F44F240986B30022CFD7 /* TLCPokemonController.m in Sources */,
+				FB00F45A2409A7A20022CFD7 /* PokemonTableViewController.m in Sources */,
+				FB00F45D2409A7BF0022CFD7 /* PokemonDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

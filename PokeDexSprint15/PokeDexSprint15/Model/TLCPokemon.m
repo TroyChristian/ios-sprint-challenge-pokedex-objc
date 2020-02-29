@@ -28,9 +28,11 @@
         NSString *abilityName = ability[@"name"];
         [self.abilities addObject: abilityName];
     }
-    
+    //
     self.pokemonId = [dictionary[@"id"] intValue]; //cast to integer to fit model
     //step down into json
+    
+    
     NSDictionary *spritesDictionary = dictionary[@"sprites"];
     NSURL *spriteURL = [NSURL URLWithString:spritesDictionary[@"front_default"]];
     NSData *imageData = [NSData dataWithContentsOfURL:spriteURL];
