@@ -46,6 +46,12 @@
 		FB00F4592409A7A20022CFD7 /* PokemonTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonTableViewController.m; sourceTree = "<group>"; };
 		FB00F45B2409A7BF0022CFD7 /* PokemonDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PokemonDetailViewController.h; sourceTree = "<group>"; };
 		FB00F45C2409A7BF0022CFD7 /* PokemonDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PokemonDetailViewController.m; sourceTree = "<group>"; };
+		FB00F45F240AE5370022CFD7 /* LSILog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSILog.m; sourceTree = "<group>"; };
+		FB00F460240AE5370022CFD7 /* LSIErrors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIErrors.m; sourceTree = "<group>"; };
+		FB00F461240AE5370022CFD7 /* LSIFileHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIFileHelper.m; sourceTree = "<group>"; };
+		FB00F462240AE5370022CFD7 /* LSIFileHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIFileHelper.h; sourceTree = "<group>"; };
+		FB00F463240AE5370022CFD7 /* LSIErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIErrors.h; sourceTree = "<group>"; };
+		FB00F464240AE5370022CFD7 /* LSILog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSILog.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,7 @@
 			children = (
 				FB00F44D240986B30022CFD7 /* TLCPokemonController.h */,
 				FB00F44E240986B30022CFD7 /* TLCPokemonController.m */,
+				FB00F45E240AE5370022CFD7 /* LambdaSDK */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -134,6 +141,19 @@
 				FB00F45C2409A7BF0022CFD7 /* PokemonDetailViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB00F45E240AE5370022CFD7 /* LambdaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				FB00F45F240AE5370022CFD7 /* LSILog.m */,
+				FB00F460240AE5370022CFD7 /* LSIErrors.m */,
+				FB00F461240AE5370022CFD7 /* LSIFileHelper.m */,
+				FB00F462240AE5370022CFD7 /* LSIFileHelper.h */,
+				FB00F463240AE5370022CFD7 /* LSIErrors.h */,
+				FB00F464240AE5370022CFD7 /* LSILog.h */,
+			);
+			path = LambdaSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
