@@ -9,6 +9,7 @@
 #import "PokemonDetailViewController.h"
 #import "TLCPokemonController.h"
 #import "TLCPokemon.h"
+#import <UIKit/UIKit.h>
 
 void *KVOContext = &KVOContext;
 
@@ -34,9 +35,9 @@ void *KVOContext = &KVOContext;
         dispatch_async(dispatch_get_main_queue(), ^{
             self.PokemonNameLabel.text = [NSString stringWithFormat:@"Name: %@",self.pokemon.name];
             self.pokemonImage.image = self.pokemon.pokemonSprite;
-            self.idLabel.text = [NSString stringWithFormat: @"Name %@", self.pokemon.name];
+            self.idLabel.text = [[NSString stringWithFormat: @"ID %d", self.pokemon.pokemonId] capitalizedString];
             NSString *ability = [[self.pokemon.abilities valueForKey:@"description"] componentsJoinedByString:@", "];
-            self.abilitiesLabel.text = [NSString stringWithFormat:@"Abilities: %@",  ability];
+            self.abilitiesLabel.text = [[NSString stringWithFormat:@"Abilities: %@",  ability]capitalizedString];
         });
     }
 }
